@@ -472,7 +472,8 @@ button {
 }
 
 .card-content__item {
-    font-size: 16px;
+    font-size: 18px;
+    font-family: 'Visuelt Medium';
 }
 
 .item-mark {
@@ -532,8 +533,8 @@ button {
     height: 1000px;
     border-radius: 50%; 
     z-index: 1;
-    right: -18%;
-    bottom: -60%;
+    right: -9%;
+    bottom: -51%;
     opacity: .7;
 }
 
@@ -643,12 +644,6 @@ button {
     background-color: #f8f8f8;
 }
 
-
-.review-text {
-    
-}
-.review-rate {
-}
 
 
 
@@ -991,7 +986,9 @@ button {
         max-width: 437px;
         position: static;
     }
-
+    .reviews__btn {
+        margin: 0 auto;
+    }
 
 
     
@@ -1005,6 +1002,7 @@ button {
         right: 15%;
         top: -46%;
     }
+
 }
 
 @media(max-width: 795px) {
@@ -1015,7 +1013,9 @@ button {
     .about__info-span {
         font-size: 14px;
     }
-    
+    .reviews__btn {
+        box-shadow: 1px 0px 10px 2px rgba(0, 0, 0, 0.15);
+    }
 }
 
 @media(max-width: 560px) {
