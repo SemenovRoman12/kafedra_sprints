@@ -283,45 +283,11 @@ button {
 
 
 .about {
-    background-color: #fdfdfd;
-    position: relative;
-    overflow: hidden;
+    background:
+            radial-gradient(1000px at 90% 0, var(--purple-bg), var(--blue-bg) 28%, #d9d9d963 55%, #fdfdfd 60%, transparent),
+            radial-gradient(500px at 0 80%, var(--purple-bg), #d9d9d963 55%, #fdfdfd 65%, transparent),
+            #fdfdfd;
     padding: 80px 0;
-    z-index: 10;
-}
-
-.about::before {
-    content: '';
-    background-image: radial-gradient(circle, #eb478bcc, #d9d9d963 55%, #fdfdfd 65%);
-    position: absolute;
-    width: 1000px;
-    height: 1000px;
-    border-radius: 50%;
-    z-index: 1;
-    left: -25%;
-    bottom: -38%;
-    opacity: .7;
-}
-
-.about::after {
-    content: '';
-    background-image: radial-gradient(circle, #eb478bcc, #4755ebbd 28%, #d9d9d963 55%, #fdfdfd 60%);
-    position: absolute;
-    width: 1500px;
-    height: 1500px;
-    border-radius: 50%;
-    z-index: -1;
-    right: -30%;
-    top: -85%;
-    opacity: .7;
-}
-
-.about__img {
-    z-index: 10;
-}
-
-.about__title {
-    z-index: 10;
 }
 
 .about__wrapper {
@@ -335,7 +301,6 @@ button {
     flex-direction: column;
     justify-content: center;
     max-width: 463px;
-    z-index: 10;
 }
 .about-pagination {
     display: flex;
