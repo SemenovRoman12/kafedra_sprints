@@ -164,7 +164,7 @@ button {
 
 .rocket {
     background:
-        radial-gradient(1000px at 0 90%, var(--purple-bg) 15%, var(--blue-bg) 40%, #d9d9d963 55%, var(--gray-bg) 60%, transparent),
+        radial-gradient(1000px at 11% 90%, var(--purple-bg) 15%, var(--blue-bg) 40%, #d9d9d963 55%, var(--gray-bg) 60%, transparent),
         radial-gradient(500px at 65% 48%, var(--blue-bg), #d9d9d963 55%, var(--gray-bg) 65%, transparent),
         var(--gray-bg);
     padding: 120px 0;
@@ -767,8 +767,8 @@ button {
 @media(max-width: 1180px) {
     .rocket {
         background:
-            radial-gradient(700px at 0 67%, var(--purple-bg) 15%, var(--blue-bg) 40%, #d9d9d963 55%, var(--gray-bg) 75%, transparent),
-            radial-gradient(500px at 70% 74%, var(--blue-bg), #d9d9d963 55%, var(--gray-bg) 65%, transparent),
+            radial-gradient(700px at 8% 40%, var(--purple-bg) 15%, var(--blue-bg) 40%, #d9d9d963 55%, var(--gray-bg) 75%, transparent),
+            radial-gradient(500px at 65% 50%, var(--blue-bg), #d9d9d963 55%, var(--gray-bg) 65%, transparent),
             var(--gray-bg);
         padding: 40px 0 60px;
     }
