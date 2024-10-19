@@ -250,7 +250,6 @@ button {
 .advantage__list-item {
     border-radius: 24px;
     box-shadow: 1px 0 10px 2px rgba(0, 0, 0, 0.15);
-    overflow: hidden;
 }
 
 .advantage-item-title {
@@ -276,19 +275,6 @@ button {
     padding: 12px 16px;
     background-color: var(--gray-bg);
 }
-
-.advantage__list-item:nth-child(2) .advantage-item-title::before {
-    background-image: url('../img/Emoji2.png');
-}
-
-.advantage__list-item:nth-child(3) .advantage-item-title::before {
-    background-image: url('../img/Emoji3.png');
-}
-
-
-
-
-
 
 .about {
     background:
@@ -471,21 +457,20 @@ button {
     z-index: 3;
 }
 .reviews__list-item:nth-child(2) {
-    bottom: 15%;
-    right: 0;
-    z-index: 3;
+    bottom: 42%;
+    right: -1%;
+    z-index: 2;
 }
 .reviews__list-item:nth-child(3) {
-    bottom: 10%;
-    right: 34%;
-    z-index: 2;
+    bottom: 20%;
+    right: 30%;
+    z-index: 1;
 }
 .reviews__list-item:nth-child(4) {
     left: 6%;
     top: 12%;
     z-index: 2;
 }
-
 
 .reviews-item__header {
     display: flex;
@@ -514,8 +499,6 @@ button {
     font-size: 18px;
     gap: 20px;
 }
-
-
 
 .review-date {
     font-size: 14px;
@@ -638,17 +621,6 @@ button {
     border-radius: 0 0 24px 24px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
 .feedback {
     margin: 80px 0;
 }
@@ -679,7 +651,6 @@ button {
     gap: 16px;
     margin-bottom: 40px;
 }
-
 
 .feedback__form-input {
     font-family: 'Visuelt', serif;
@@ -712,16 +683,6 @@ button {
 .feedback__agree {
     max-width: 238px;
 }
-
-
-
-
-
-
-
-
-
-
 
 .footer {
     background-color: #4754EB;
@@ -766,8 +727,6 @@ button {
 
 
 
-
-
 @media(max-width: 1220px) {
     .discount {
         padding: 0 0 80px;
@@ -805,7 +764,6 @@ button {
     }
 }
 
-
 @media(max-width: 1180px) {
     .rocket {
         background:
@@ -823,14 +781,10 @@ button {
     }
 }
 
-
-
 @media(max-width: 1060px) {
     .feedback__wrapper {
         justify-content: center;
     }
-
-
     .reviews__list {
         display: flex;
         flex-wrap: wrap;
@@ -838,7 +792,6 @@ button {
         align-items: center;
         gap: 30px;
     }
-
     .reviews__list-item {
         max-width: 437px;
         position: static;
@@ -851,8 +804,6 @@ button {
         display: none;
     }
 }
-
-
 
 @media(max-width: 795px) {
     .footer__swipe,
@@ -955,4 +906,3 @@ button {
         justify-content: flex-start;
     }
 }
-
