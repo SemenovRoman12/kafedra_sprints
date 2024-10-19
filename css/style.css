@@ -872,8 +872,9 @@ button {
         margin: 0 auto;
     }
 
-
-
+    .feedback__img {
+        display: none;
+    }
 }
 
 
@@ -888,6 +889,9 @@ button {
     }
     .reviews__btn {
         box-shadow: 1px 0 10px 2px rgba(0, 0, 0, 0.15);
+    }
+    .tariffs {
+        margin: 40px 0 80px;
     }
 }
 
@@ -958,6 +962,9 @@ button {
     }
     .rocket__agree {
         margin-bottom: 40px;
+    }
+    .tariffs {
+        margin: 40px 0;
     }
     .quest--close,
     .quest--open {
