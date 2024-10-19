@@ -60,6 +60,7 @@ ul {
 button {
     cursor: pointer;
     border: none;
+    font-family: inherit;
 }
 
 .big-btn {
@@ -168,7 +169,10 @@ button {
     padding: 120px 0;
 }
 
-.rocket__img {
+.rocket__img,
+.discount__img,
+.about__img,
+.feedback__img {
     max-width: 100%;
     object-fit: contain;
 }
@@ -295,9 +299,9 @@ button {
 
 .about {
     background:
-            radial-gradient(1000px at 90% 0, var(--purple-bg), var(--blue-bg) 28%, #d9d9d963 55%, #fdfdfd 60%, transparent),
-            radial-gradient(500px at 0 80%, var(--purple-bg), #d9d9d963 55%, #fdfdfd 65%, transparent),
-            #fdfdfd;
+        radial-gradient(1000px at 90% 0, var(--purple-bg), var(--blue-bg) 28%, #d9d9d963 55%, #fdfdfd 60%, transparent),
+        radial-gradient(500px at 0 80%, var(--purple-bg), #d9d9d963 55%, #fdfdfd 65%, transparent),
+        #fdfdfd;
     padding: 80px 0;
 }
 
@@ -444,9 +448,9 @@ button {
 
 .reviews {
     background:
-            radial-gradient(1000px at 85% 105%, var(--purple-bg), var(--blue-bg) 10%, #d9d9d963 40%, #fdfdfd 60%, transparent),
-            radial-gradient(1000px at 100% 0, var(--purple-bg) 30%, #d9d9d963 55%, #fdfdfd 60%, transparent),
-            #fdfdfd;
+        radial-gradient(1000px at 85% 105%, var(--purple-bg), var(--blue-bg) 10%, #d9d9d963 40%, #fdfdfd 60%, transparent),
+        radial-gradient(1000px at 100% 0, var(--purple-bg) 30%, #d9d9d963 55%, #fdfdfd 60%, transparent),
+        #fdfdfd;
 }
 
 .reviews__wrapper {
@@ -606,9 +610,9 @@ button {
 
 .questions {
     background:
-            radial-gradient(1000px at 0% 100%, var(--purple-bg) 15%, var(--blue-bg) 40%, #d9d9d963 55%, #fdfdfd 60%, transparent),
-            radial-gradient(1000px at 100% 0%, var(--purple-bg), #d9d9d963 55%, #fdfdfd 65%, transparent),
-            #fdfdfd;
+        radial-gradient(1000px at 0% 100%, var(--purple-bg) 15%, var(--blue-bg) 40%, #d9d9d963 55%, #fdfdfd 60%, transparent),
+        radial-gradient(1000px at 100% 0%, var(--purple-bg), #d9d9d963 55%, #fdfdfd 65%, transparent),
+        #fdfdfd;
     padding: 80px 0;
     color: #1A1A1A;
 }
@@ -685,7 +689,6 @@ button {
 .feedback__content {
     display: flex;
     flex-direction: column;
-
     max-width: 465px;
 }
 
@@ -707,6 +710,7 @@ button {
 
 
 .feedback__form-input {
+    font-family: 'Visuelt', serif;
     background-color: #F2F2F2;
     padding: 16px;
     border-radius: 15px;
@@ -793,14 +797,9 @@ button {
 
 
 @media(max-width: 1220px) {
-    .questions::after {
-        top: -60%;
-    }
     .discount__wrapper {
         flex-direction: column-reverse;
     }
-    .about::before,
-    .rocket::after,
     .header__btn-field,
     .nav__list {
         display: none;
@@ -818,15 +817,26 @@ button {
         flex-direction: column;
         gap: 4px;
     }
+    .about {
+        background:
+            radial-gradient(1000px at 90% 50%, var(--purple-bg), var(--blue-bg) 28%, #d9d9d963 55%, #fdfdfd 60%, transparent),
+            radial-gradient(500px at 20% 100%, var(--purple-bg), #d9d9d963 55%, #fdfdfd 65%, transparent),
+            #fdfdfd;
+    }
+    .about__wrapper {
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
 }
 
 
 @media(max-width: 1180px) {
     .rocket {
         background:
-                radial-gradient(700px at 0 67%, var(--purple-bg) 15%, var(--blue-bg) 40%, #d9d9d963 55%, #fdfdfd 75%, transparent),
-                radial-gradient(500px at 70% 74%, var(--blue-bg), #d9d9d963 55%, #fdfdfd 65%, transparent),
-                #fdfdfd;
+            radial-gradient(700px at 0 67%, var(--purple-bg) 15%, var(--blue-bg) 40%, #d9d9d963 55%, #fdfdfd 75%, transparent),
+            radial-gradient(500px at 70% 74%, var(--blue-bg), #d9d9d963 55%, #fdfdfd 65%, transparent),
+            #fdfdfd;
         padding: 40px 0 60px;
     }
     .rocket__wrapper {
@@ -844,11 +854,7 @@ button {
     .feedback__wrapper {
         justify-content: center;
     }
-    .discount__img,
-    .about__img,
-    .feedback__img {
-        display: none;
-    }
+
 
     .reviews__list {
         display: flex;
@@ -870,16 +876,7 @@ button {
 
 }
 
-@media(max-width: 953px) {
-    .reviews::before {
-        bottom: -45%;
-    }
-    .reviews::after {
-        right: 15%;
-        top: -46%;
-    }
 
-}
 
 @media(max-width: 795px) {
     .footer__swipe,
@@ -893,6 +890,13 @@ button {
         box-shadow: 1px 0 10px 2px rgba(0, 0, 0, 0.15);
     }
 }
+
+@media(max-width: 650px) {
+    .about {
+        background: radial-gradient(1000px at 100% 60%, var(--purple-bg), var(--blue-bg) 28%, #d9d9d963 55%, #fdfdfd 60%, transparent), #fdfdfd;;
+    }
+}
+
 
 @media(max-width: 560px) {
     body,
@@ -928,11 +932,8 @@ button {
     .discount__btn-wrapper {
         margin-bottom: 16px;
     }
-    .about::after {
-        width: 1000px;
-        height: 1000px;
-        right: -45%;
-        top: -53%;
+    .about__btn {
+        width: 100%;
     }
 }
 
@@ -940,8 +941,20 @@ button {
     .rocket {
         padding: 40px 0;
         background:
-                radial-gradient(600px at -15% 54%, var(--purple-bg) 15%, var(--blue-bg) 40%, #d9d9d963 55%, #fdfdfd 75%, transparent),
-                #fdfdfd
+            radial-gradient(600px at -15% 54%, var(--purple-bg) 15%, var(--blue-bg) 40%, #d9d9d963 55%, #fdfdfd 75%, transparent),
+            #fdfdfd
+    }
+    .about {
+        padding: 40px 0;
+        background:
+            radial-gradient(700px at 100% 48%, var(--purple-bg), var(--blue-bg) 28%, #d9d9d963 55%, #fdfdfd 60%, transparent),
+            #fdfdfd;
+    }
+    .about__info {
+        margin: 24px 0 30px;
+    }
+    .about-pagination {
+        font-size: 11px;
     }
     .rocket__agree {
         margin-bottom: 40px;
