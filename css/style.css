@@ -1,6 +1,7 @@
 :root {
     --purple-bg: rgba(134, 51, 176, 0.4);
     --blue-bg: rgba(71, 84, 235, 0.4);
+    --gray-bg: #F2F2F2;
 }
 
 *,
@@ -60,7 +61,7 @@ ul {
 button {
     cursor: pointer;
     border: none;
-    font-family: inherit;
+    font-family: 'Visuelt', serif;
 }
 
 .big-btn {
@@ -163,16 +164,17 @@ button {
 
 .rocket {
     background:
-        radial-gradient(1000px at 0 90%, var(--purple-bg) 15%, var(--blue-bg) 40%, #d9d9d963 55%, #fdfdfd 60%, transparent),
-        radial-gradient(500px at 65% 48%, var(--blue-bg), #d9d9d963 55%, #fdfdfd 65%, transparent),
-        #fdfdfd;
+        radial-gradient(1000px at 0 90%, var(--purple-bg) 15%, var(--blue-bg) 40%, #d9d9d963 55%, var(--gray-bg) 60%, transparent),
+        radial-gradient(500px at 65% 48%, var(--blue-bg), #d9d9d963 55%, var(--gray-bg) 65%, transparent),
+        var(--gray-bg);
     padding: 120px 0;
 }
 
 .rocket__img,
 .discount__img,
 .about__img,
-.feedback__img {
+.feedback__img,
+.advantage-item-img{
     max-width: 100%;
     object-fit: contain;
 }
@@ -252,9 +254,6 @@ button {
 }
 
 .advantage-item-title {
-    display: flex;
-    align-items: center;
-
     font-size: 24px;
     border-radius: 24px 24px 0 0;
     background-color: #ffffff;
@@ -263,25 +262,19 @@ button {
 
 .advantage-item-text {
     font-size: 18px;
-    padding: 12px 16px;
-    background-color: #fdfdfd;
+
     border-radius: 0 0 24px 24px;
 }
 
-
-.advantage-item-title::before {
-    content: '';
-    display: inline-block;
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-    width: 54px;
-    height: 54px;
-    margin-right: 12px;
+.advantage-item__header {
+    display: flex;
+    align-items: center;
+    padding: 12px 16px;
 }
 
-.advantage__list-item:nth-child(1) .advantage-item-title::before {
-    background-image: url('../img/Emoji1.png');
+.advantage-item__body {
+    padding: 12px 16px;
+    background-color: var(--gray-bg);
 }
 
 .advantage__list-item:nth-child(2) .advantage-item-title::before {
@@ -299,9 +292,9 @@ button {
 
 .about {
     background:
-        radial-gradient(1000px at 90% 0, var(--purple-bg), var(--blue-bg) 28%, #d9d9d963 55%, #fdfdfd 60%, transparent),
-        radial-gradient(500px at 0 80%, var(--purple-bg), #d9d9d963 55%, #fdfdfd 65%, transparent),
-        #fdfdfd;
+        radial-gradient(1000px at 90% 0, var(--purple-bg), var(--blue-bg) 28%, #d9d9d963 55%, var(--gray-bg) 60%, transparent),
+        radial-gradient(500px at 0 80%, var(--purple-bg), #d9d9d963 55%, var(--gray-bg) 65%, transparent),
+        var(--gray-bg);
     padding: 80px 0;
 }
 
@@ -448,9 +441,9 @@ button {
 
 .reviews {
     background:
-        radial-gradient(1000px at 85% 105%, var(--purple-bg), var(--blue-bg) 10%, #d9d9d963 40%, #fdfdfd 60%, transparent),
-        radial-gradient(1000px at 100% 0, var(--purple-bg) 30%, #d9d9d963 55%, #fdfdfd 60%, transparent),
-        #fdfdfd;
+        radial-gradient(1000px at 85% 105%, var(--purple-bg), var(--blue-bg) 10%, #d9d9d963 40%, var(--gray-bg) 60%, transparent),
+        radial-gradient(1000px at 100% 0, var(--purple-bg) 30%, #d9d9d963 55%, var(--gray-bg) 60%, transparent),
+        var(--gray-bg);
 }
 
 .reviews__wrapper {
@@ -468,9 +461,7 @@ button {
 .reviews__list-item {
     box-shadow: 1px 0 10px 2px rgba(0, 0, 0, 0.15);
     border-radius: 24px;
-    /* max-width: 437px; */
     max-width: 628px;
-    z-index: 10;
     position: absolute;
 }
 
@@ -505,7 +496,6 @@ button {
     padding: 16px;
     position: relative;
     background: #fff;
-    z-index: 10;
 }
 
 .review-person {
@@ -539,24 +529,12 @@ button {
     background-color: #f8f8f8;
 }
 
-
-
-
-
-
 .reviews__btn {
-    z-index: 10;
     color: #4754EB;
     background-color: #fff;
     align-self: flex-end;
-    /* transform: translateY(calc(-100% - 16px)); */
+    font-weight: 500;
 }
-
-
-
-
-
-
 
 .discount {
     padding: 87px 0;
@@ -580,9 +558,7 @@ button {
 
 .discount__btn-wrapper {
     position: relative;
-
 }
-
 
 .discount__input-text{
     background-color: #F2F2F2;
@@ -596,7 +572,7 @@ button {
     background-color: #4754EB;
     color: #fff;
     position: absolute;
-    top: 5px;
+    top: 10%;
     right: 21%;
 }
 
@@ -604,15 +580,11 @@ button {
     max-width: 354px;
 }
 
-
-
-
-
 .questions {
     background:
-        radial-gradient(1000px at 0% 100%, var(--purple-bg) 15%, var(--blue-bg) 40%, #d9d9d963 55%, #fdfdfd 60%, transparent),
-        radial-gradient(1000px at 100% 0%, var(--purple-bg), #d9d9d963 55%, #fdfdfd 65%, transparent),
-        #fdfdfd;
+        radial-gradient(1000px at 0% 100%, var(--purple-bg) 15%, var(--blue-bg) 40%, #d9d9d963 55%, var(--gray-bg) 60%, transparent),
+        radial-gradient(1000px at 100% 0%, var(--purple-bg), #d9d9d963 55%, var(--gray-bg) 65%, transparent),
+        var(--gray-bg);
     padding: 80px 0;
     color: #1A1A1A;
 }
@@ -797,8 +769,11 @@ button {
 
 
 @media(max-width: 1220px) {
+    .discount {
+        padding: 0 0 80px;
+    }
     .discount__wrapper {
-        flex-direction: column-reverse;
+        flex-direction: column;
     }
     .header__btn-field,
     .nav__list {
@@ -819,9 +794,9 @@ button {
     }
     .about {
         background:
-            radial-gradient(1000px at 90% 50%, var(--purple-bg), var(--blue-bg) 28%, #d9d9d963 55%, #fdfdfd 60%, transparent),
-            radial-gradient(500px at 20% 100%, var(--purple-bg), #d9d9d963 55%, #fdfdfd 65%, transparent),
-            #fdfdfd;
+            radial-gradient(1000px at 90% 50%, var(--purple-bg), var(--blue-bg) 28%, #d9d9d963 55%, var(--gray-bg) 60%, transparent),
+            radial-gradient(500px at 20% 100%, var(--purple-bg), #d9d9d963 55%, var(--gray-bg) 65%, transparent),
+            var(--gray-bg);
     }
     .about__wrapper {
         flex-direction: column;
@@ -834,9 +809,9 @@ button {
 @media(max-width: 1180px) {
     .rocket {
         background:
-            radial-gradient(700px at 0 67%, var(--purple-bg) 15%, var(--blue-bg) 40%, #d9d9d963 55%, #fdfdfd 75%, transparent),
-            radial-gradient(500px at 70% 74%, var(--blue-bg), #d9d9d963 55%, #fdfdfd 65%, transparent),
-            #fdfdfd;
+            radial-gradient(700px at 0 67%, var(--purple-bg) 15%, var(--blue-bg) 40%, #d9d9d963 55%, var(--gray-bg) 75%, transparent),
+            radial-gradient(500px at 70% 74%, var(--blue-bg), #d9d9d963 55%, var(--gray-bg) 65%, transparent),
+            var(--gray-bg);
         padding: 40px 0 60px;
     }
     .rocket__wrapper {
@@ -885,7 +860,7 @@ button {
     .footer__info p:nth-child(2),
     .about__info-text,
     .about__info-span {
-        font-size: 14px;
+        font-size: 15px;
     }
     .reviews__btn {
         box-shadow: 1px 0 10px 2px rgba(0, 0, 0, 0.15);
@@ -893,11 +868,17 @@ button {
     .tariffs {
         margin: 40px 0 80px;
     }
+    .discount__input-text {
+        width: 100%;
+    }
+    .discount__btn {
+        right: 1%;
+    }
 }
 
 @media(max-width: 650px) {
     .about {
-        background: radial-gradient(1000px at 100% 60%, var(--purple-bg), var(--blue-bg) 28%, #d9d9d963 55%, #fdfdfd 60%, transparent), #fdfdfd;;
+        background: radial-gradient(1000px at 100% 60%, var(--purple-bg), var(--blue-bg) 28%, #d9d9d963 55%, var(--gray-bg) 60%, transparent), var(--gray-bg);;
     }
 }
 
@@ -930,14 +911,14 @@ button {
         flex-wrap: wrap;
         justify-content: flex-start;
     }
-    .discount__btn {
-        position: static;
-    }
     .discount__btn-wrapper {
         margin-bottom: 16px;
     }
     .about__btn {
         width: 100%;
+    }
+    .advantage-item-img {
+        height: 36px;
     }
 }
 
@@ -945,14 +926,14 @@ button {
     .rocket {
         padding: 40px 0;
         background:
-            radial-gradient(600px at -15% 54%, var(--purple-bg) 15%, var(--blue-bg) 40%, #d9d9d963 55%, #fdfdfd 75%, transparent),
-            #fdfdfd
+            radial-gradient(600px at -15% 54%, var(--purple-bg) 15%, var(--blue-bg) 40%, #d9d9d963 55%, var(--gray-bg) 75%, transparent),
+            var(--gray-bg)
     }
     .about {
         padding: 40px 0;
         background:
-            radial-gradient(700px at 100% 48%, var(--purple-bg), var(--blue-bg) 28%, #d9d9d963 55%, #fdfdfd 60%, transparent),
-            #fdfdfd;
+            radial-gradient(700px at 100% 48%, var(--purple-bg), var(--blue-bg) 28%, #d9d9d963 55%, var(--gray-bg) 60%, transparent),
+            var(--gray-bg);
     }
     .about__info {
         margin: 24px 0 30px;
