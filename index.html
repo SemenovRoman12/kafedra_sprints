@@ -4,8 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/normolize.css">
+    <title>Instabots</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -13,16 +12,15 @@
         <div class="container">
             <div class="header__wrapper">
                 <div class="header__menu-wrapper">
-                    <p class="header__name">Инстаботы</p>
-
                     <button class="burger-menu">
-                        <span></span>
-                        <span></span>
-                        <span></span>
+                        <div class="burger-menu__inner">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
                     </button>
+                    <p class="header__name">Инстаботы</p>
                 </div>
-                
-
                 <nav class="nav">
                     <ul class="nav__list">
                         <li class="nav__list-item">
@@ -42,8 +40,8 @@
                         </li>
                     </ul>
                 </nav>
+                <p class="languages"><span>Ru</span>/En</p>
                 <div class="header__btn-field">
-                    <p class="languages"><span>Ru</span>/En</p>
                     <button class="header__btn small-btn">Вход и регистрация</button>
                 </div>
                 <a class="profile-logo" href="#">
@@ -53,8 +51,6 @@
         </div>
     </header>
     <main class="main">
-
-
         <section class="rocket">
             <div class="container">
                 <div class="rocket__wrapper">
@@ -65,50 +61,54 @@
                             <button class="rocket__btn small-btn">Отправить</button>
                         </div>
                         <div class="rocket__agree agree-text">Нажимая на кнопку вы соглашаетесь на обработку <a class="agree-text__link" href="#">персональных данных</a></div>
+                        <div class="rocket__anchor-wrapper">
+                            <img src="img/anchor-header.png" alt="anchor" class="rocket__anchor-img">
+                            <a class="rocket__anchor-img" href="#">Листай дальше</a>
+                        </div>
                     </div>
                     <img class="rocket__img" src="img/rocket.png" alt="rocket">
                 </div>
             </div>
         </section>
-
-
-
-
-
         <section class="advantage">
             <div class="container">
-                
                 <h2 class="advantage__title">Наши преимущества</h2>
-
                 <div class="advantage__list">
                     <div class="advantage__list-item">
-                        <h3 class="advantage-item-title">Легко и просто</h3>
-                        <p class="advantage-item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Malesuada gravida nisi sit felis odio. Sociis et pellentesque sed id. Congue arcu turpis est, aliquet porttitor. Congue arcu turpis est, aliquet porttitor.</p>
+                        <div class="advantage-item__header">
+                            <img class="advantage-item-img" src="img/Emoji1.png" alt="smile-img">
+                            <h3 class="advantage-item-title">Легко и просто</h3>
+                        </div>
+                        <div class="advantage-item__body">
+                            <p class="advantage-item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Malesuada gravida nisi sit felis odio. Sociis et pellentesque sed id. Congue arcu turpis est, aliquet porttitor. Congue arcu turpis est, aliquet porttitor.</p>
+                        </div>
                     </div>
-
                     <div class="advantage__list-item">
-                        <h3 class="advantage-item-title">Быстро и доступно</h3>
-                        <p class="advantage-item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Malesuada gravida nisi sit felis odio. Sociis et pellentesque sed id. Congue arcu turpis est, aliquet porttitor. Congue arcu turpis est, aliquet porttitor.</p>
+                        <div class="advantage-item__header">
+                            <img class="advantage-item-img" src="img/Emoji2.png" alt="smile-img">
+                            <h3 class="advantage-item-title">Быстро и доступно</h3>
+                        </div>
+                        <div class="advantage-item__body">
+                            <p class="advantage-item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Malesuada gravida nisi sit felis odio. Sociis et pellentesque sed id. Congue arcu turpis est, aliquet porttitor. Congue arcu turpis est, aliquet porttitor.</p>
+                        </div>
                     </div>
-
                     <div class="advantage__list-item">
-                        <h3 class="advantage-item-title">А главное, качественно</h3>
-                        <p class="advantage-item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Malesuada gravida nisi sit felis odio. Sociis et pellentesque sed id. Congue arcu turpis est, aliquet porttitor. Congue arcu turpis est, aliquet porttitor.</p>
+                        <div class="advantage-item__header">
+                            <img class="advantage-item-img" src="img/Emoji3.png" alt="smile-img">
+                            <h3 class="advantage-item-title">А главное, качественно</h3>
+                        </div>
+                        <div class="advantage-item__body">
+                            <p class="advantage-item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Malesuada gravida nisi sit felis odio. Sociis et pellentesque sed id. Congue arcu turpis est, aliquet porttitor. Congue arcu turpis est, aliquet porttitor.</p>
+                        </div>
                     </div>
                 </div>
-                
-
             </div>
         </section>
-
-
-
-
         <section class="about">
             <div class="container">
                 <h2 class="about__title">Как мы работаем</h2>
                 <div class="about__wrapper">
-                    <img class="about__img" src="img/aboutimg.png" alt="aboutimg">  
+                    <img class="about__img" src="img/aboutimg.png" alt="aboutimg">
 
                     <div class="about__content">
                         <div class="about-pagination">
@@ -124,19 +124,11 @@
                             <p class="about__info-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Posuere lorem nulla tincidunt egestas nibh. Non orci, et massa sed vulputate proin. Eu euismod diam, arcu sit vitae nam. Tristique orci, ornare sit vel amet.</p>
                             <p class="about__info-text">Ut elit dui iaculis malesuada in auctor dui. Sollicitudin varius vitae ut vitae lacus, sem dolor fermentum enim. Orci orci interdum pretium adipiscing augue sit nisl adipiscing.</p>
                         </div>
-                        
                         <button class="about__btn big-btn">Забронировать звонок</button>
                     </div>
                 </div>
             </div>
         </section>
-
-
-
-
-
-
-
         <section class="tariffs">
             <div class="container">
                 <h2 class="tariffs__title">Наши тарифы</h2>
@@ -157,7 +149,6 @@
                             <a class="tariffs-card__footer-btn" href="#">Узнать подробнее</a>
                         </div>
                     </div>
-
                     <div class="tariffs-card">
                         <div class="tariffs-card__header">
                             <p class="tariffs-card__header-title">Стандарт</p>
@@ -173,7 +164,6 @@
                             <a class="tariffs-card__footer-btn" href="#">Узнать подробнее</a>
                         </div>
                     </div>
-
                     <div class="tariffs-card">
                         <div class="tariffs-card__header">
                             <p class="tariffs-card__header-title">Экстра</p>
@@ -189,7 +179,6 @@
                             <a class="tariffs-card__footer-btn" href="#">Узнать подробнее</a>
                         </div>
                     </div>
-
                     <div class="tariffs-card">
                         <div class="tariffs-card__header">
                             <p class="tariffs-card__header-title">Премиальный</p>
@@ -205,25 +194,14 @@
                             <a class="tariffs-card__footer-btn" href="#">Узнать подробнее</a>
                         </div>
                     </div>
-
                 </div>
             </div>
         </section>
-
-
-
         <section class="reviews">
             <div class="container">
                 <div class="reviews__wrapper">
                     <h2 class="reviews__title">Отзывы</h2>
-
-
-
-
-
                     <div class="reviews__list">
-
-
                         <div class="reviews__list-item">
                             <div class="reviews-item__header">
                                 <div class="review-person">
@@ -232,7 +210,6 @@
                                 </div>
                                 <span class="review-date">03.06.2021</span>
                             </div>
-
                             <div class="reviews-item__footer">
                                 <div class="review-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Malesuada gravida nisi sit felis odio. Sociis et pellentesque sed id. Congue arcu turpis est, aliquet porttitor. Congue arcu turpis est, aliquet porttitor.</div>
                                 <div class="review-rate">
@@ -244,7 +221,6 @@
                                 </div>
                             </div>
                         </div>
-
                         <div class="reviews__list-item">
                             <div class="reviews-item__header">
                                 <div class="review-person">
@@ -253,7 +229,6 @@
                                 </div>
                                 <span class="review-date">03.06.2021</span>
                             </div>
-
                             <div class="reviews-item__footer">
                                 <div class="review-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Malesuada gravida nisi sit felis odio. Sociis et pellentesque sed id. Congue arcu turpis est, aliquet porttitor. Congue arcu turpis est, aliquet porttitor.</div>
                                 <div class="review-rate">
@@ -265,7 +240,6 @@
                                 </div>
                             </div>
                         </div>
-
                         <div class="reviews__list-item">
                             <div class="reviews-item__header">
                                 <div class="review-person">
@@ -274,7 +248,6 @@
                                 </div>
                                 <span class="review-date">03.06.2021</span>
                             </div>
-
                             <div class="reviews-item__footer">
                                 <div class="review-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Malesuada gravida nisi sit felis odio. Sociis et pellentesque sed id. Congue arcu turpis est, aliquet porttitor. Congue arcu turpis est, aliquet porttitor.</div>
                                 <div class="review-rate">
@@ -286,7 +259,6 @@
                                 </div>
                             </div>
                         </div>
-
                         <div class="reviews__list-item">
                             <div class="reviews-item__header">
                                 <div class="review-person">
@@ -295,7 +267,6 @@
                                 </div>
                                 <span class="review-date">03.06.2021</span>
                             </div>
-
                             <div class="reviews-item__footer">
                                 <div class="review-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Malesuada gravida nisi sit felis odio. Sociis et pellentesque sed id. Congue arcu turpis est, aliquet porttitor. Congue arcu turpis est, aliquet porttitor.</div>
                                 <div class="review-rate">
@@ -307,24 +278,15 @@
                                 </div>
                             </div>
                         </div>
-
-
-
                     </div>
                     <button class="reviews__btn big-btn">Структурировать котиков</button>
                 </div>
             </div>
         </section>
-
-
-
-
-
         <section class="discount">
             <div class="container">
                 <div class="discount__wrapper">
                     <img class="discount__img" src="img/disc.png" alt="disc_img">
-
                     <div class="discount__content">
                         <h2 class="discount__title">Получите самую выгодную цену на планете</h2>
                         <div class="discount__btn-wrapper">
@@ -336,72 +298,48 @@
                 </div>
             </div>
         </section>
-
-
-
-
-
-
         <section class="questions">
             <div class="container">
                 <h2 class="questions__title">Часто задаваемые вопросы</h2>
-
                 <div class="questions__content">
                     <div class="questions__content-item">
                         <div class="questions-item__header" id="quest-open"><p class="quest-title">Первый вопрос</p><img class="quest--open" src="img/quest-open.svg" alt="opened"></div>
                         <div class="questions-item__footer">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa mi aliquet eu interdum eu pellentesque amet, fermentum hendrerit. Nunc hendrerit nec risus adipiscing lacus, lobortis lectus cursus nunc. Id pellentesque dapibus eu tincidunt dui id tortor, porttitor. Tincidunt nunc praesent euismod in nisl, tellus suspendisse morbi nam. Egestas eget erat malesuada gravida. Et enim integer quam orci, cursus tincidunt mauris, sit. </div>
                     </div>
-
                     <div class="questions__content-item">
                         <div class="questions-item__header"><p class="quest-title">Второй вопрос</p><img class="quest--close" src="img/questclosed.svg" alt="closed"></div>
                     </div>
-
                     <div class="questions__content-item">
                         <div class="questions-item__header"><p class="quest-title">Третий вопрос</p><img class="quest--close" src="img/questclosed.svg" alt="closed"></div>
                     </div>
-
                     <div class="questions__content-item">
                         <div class="questions-item__header"><p class="quest-title">Четвертый вопрос</p><img class="quest--close" src="img/questclosed.svg" alt="closed"></div>
                     </div>
                 </div>
             </div>
         </section>
-
-
-
-
-
-        <section class="submit">
+        <section class="feedback">
             <div class="container">
-                <div class="submit__wrapper">
-                    <div class="submit__content">
-                        <h2 class="submit-titile">Обратная связь</h2>
-                        <p class="submit-text">Поговорите с одним из наших сотрудников, чтобы узнать, сколько мы можем получить для вас целевой аудитории за месяц с минимальными усилиями с вашей стороны</p>
-                        <form class="submit__form">
-                            <input class="submit__form-input" type="text" placeholder="Введите свой e-mail">
-                            <input class="submit__form-input" type="text" placeholder="Номер мобильного телефона">
-                            <input class="submit__form-input" type="text" placeholder="Никнейм в Instagram">
-                            <input class="submit__form-input" type="text" placeholder="Что вы бы хотели спросить о росте в Instagram">
+                <div class="feedback__wrapper">
+                    <div class="feedback__content">
+                        <h2 class="feedback-titile">Обратная связь</h2>
+                        <p class="feedback-text">Поговорите с одним из наших сотрудников, чтобы узнать, сколько мы можем получить для вас целевой аудитории за месяц с минимальными усилиями с вашей стороны</p>
+                        <form class="feedback__form">
+                            <input class="feedback__form-input" type="text" placeholder="Введите свой e-mail">
+                            <input class="feedback__form-input" type="text" placeholder="Номер мобильного телефона">
+                            <input class="feedback__form-input" type="text" placeholder="Никнейм в Instagram">
+                            <input class="feedback__form-input" type="text" placeholder="Что вы бы хотели спросить о росте в Instagram">
                         </form>
-                        <div class="submit__btn-field">
-                            <button class="submit-btn big-btn">Отправить заявку</button>
-                            <div class="submit__agree agree-text">Нажимая на кнопку вы соглашаетесь на обработку <a class="agree-text__link" href="#">персональных данных</a></div>
+                        <div class="feedback__btn-field">
+                            <button class="feedback-btn big-btn">Отправить заявку</button>
+                            <div class="feedback__agree agree-text">Нажимая на кнопку вы соглашаетесь на обработку <a class="agree-text__link" href="#">персональных данных</a></div>
                         </div>
                     </div>
-                    <div class="submit__img">
-                        <img src="img/submit.png" alt="submit-img">
-                    </div>
+                    <img class="feedback__img" src="img/feedback.png" alt="feedback-img">
                 </div>
-
             </div>
         </section>
-
-
     </main>
-
-
-
-
     <footer class="footer">
         <div class="container">
             <div class="footer__wrapper">
@@ -413,6 +351,6 @@
             </div>
         </div>
     </footer>
-
+    <script src="scripts/main.js"></script>
 </body>
 </html>
